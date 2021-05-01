@@ -1,0 +1,6 @@
+## Following are some scenarios for this 
+
+# If you have a input file with decimals
+cat toDecode.txt | awk '{printf("%c",$1)}'
+
+
