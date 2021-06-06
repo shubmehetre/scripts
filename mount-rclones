@@ -1,0 +1,3 @@
+#! /bin/bash
+#rclone mount --daemon grive1: /home/subz3ro/zzz/remotes/gdrive1
+rclone mount --daemon grive2: /home/subz3ro/zzz/remotes/gdrive2

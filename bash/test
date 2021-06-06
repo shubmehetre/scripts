@@ -1,0 +1,12 @@
+#! /bin/bash
+
+var1=$(uname)
+echo "I am using $var1 operating system"
+
+echo "Enter ur name: "
+read name
+
+day=$(date +%A)
+greet="Hello $name"
+
+echo "$greet,today is $day and you too shud use linux"
