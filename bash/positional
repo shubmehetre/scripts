@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+
+echo "Hello $1 $2"
+shift
+echo "---here shift happned once---"
+echo "Hello $1 $2"
+# echo "Hello ${10}"
+
+echo "\$@ is $@"
+echo "\$* is $*"
+echo "\$# is $#"
+echo "\$0 is $0"
+echo "====================================================="
+echo "interpretations of \$*"
+counter1=0
+for i in "$*"; do
+	let counter1+=1
+	echo $i
+done
+echo "for \$* loop ran $counter1 time"
+
+echo "====================================================="
+echo "interpretation of \$@"
+counter2=0
+for i in "$@"; do
+	let counter2+=1
+	echo $i
+done
+echo "for \$@ loop ran $counter2 times"
+
+
+echo "====================================================="
+echo "interpretations of \$* without double quotes"
+counter1=0
+for i in $*; do
+	let counter1+=1
+	echo $i
+done
+echo "its works like \$@"
