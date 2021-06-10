@@ -1,2 +1,3 @@
 #!/bin/bash
-echo touch $(date +%A)
+let x="$*"
+echo "$* = $x"
