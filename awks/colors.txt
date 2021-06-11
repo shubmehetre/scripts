@@ -1,0 +1,5 @@
+apple      red    4
+grape      purple 10
+apple      green  8
+plum       purple 2
+pineapple  yellow 5
