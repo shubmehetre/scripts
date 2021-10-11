@@ -1,0 +1,13 @@
+#!/usr/bin/zsh
+
+# testing
+
+autologin(){
+	filedir="/home/doom/zzz/newdir"; mkdir -p "$filedir";
+	cat > /home/doom/zzz/newdir/created_by_autologin <<- _EOF_
+	# this is a test
+	$USER
+	_EOF_
+
+}
+autologin
