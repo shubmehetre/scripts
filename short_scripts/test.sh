@@ -7,7 +7,6 @@
 # 	read query
 # fi
 #
-#
 echo before comment
 : << 'END'
 bla bla
